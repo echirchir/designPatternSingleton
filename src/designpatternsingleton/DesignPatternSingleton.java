@@ -1,21 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package designpatternsingleton;
 
-/**
- *
- * @author rocket
- */
 public class DesignPatternSingleton {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+       
+        System.out.println("Beginning of Singleton demo code for design patterns");
+        
+        MakeACaptain captainOne = MakeACaptain.newInstance();
+        
+        System.out.println("Trying to make another captain for the team");
+        
+        MakeACaptain captainTwo = MakeACaptain.newInstance();
+        
+        if(captainOne == captainTwo){
+            System.out.println("CaptainOne and CaptainTwo are the same instance. ");
+        }
+         
     }
     
 }
